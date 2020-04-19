@@ -50,9 +50,9 @@ public class textBoxBackground extends Application
     //System.out.println( tf.getText() );  // Used to facilitate debugging.
     if ( tf.getText().isEmpty() || tf.getText().matches( "(\\d*)" ) ) 
     {
-      // Remove red border.
-    	tf.getStyleClass().clear();
-    	tf.getStyleClass().addAll("text-field", "text-input");
+        // Remove red border.
+        tf.getStyleClass().clear();
+        tf.getStyleClass().addAll("text-field", "text-input");
     }
     else 
         // Add red border.
