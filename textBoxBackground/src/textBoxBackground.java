@@ -41,6 +41,7 @@ public class textBoxBackground extends Application
     primaryStage.setScene( scene );
     // Display the stage.
     primaryStage.show();
+    // Load our textfield stylesheet based on default modena style.
     scene.getStylesheets().add( getClass().getClassLoader().getResource( "textfield.css" ).toString() );
   }
 
