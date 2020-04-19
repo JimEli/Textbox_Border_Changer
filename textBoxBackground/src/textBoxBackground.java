@@ -12,9 +12,11 @@ public class textBoxBackground extends Application
   @Override
   public void start( Stage primaryStage ) 
   {
-    final TextField[] textFields = new TextField[4]; // 4 example textfields.
+    // 4 example textfields.
+    final TextField[] textFields = new TextField[4];
 
-    GridPane gridPane = new GridPane();    // Create UI.
+    // Create UI.
+    GridPane gridPane = new GridPane();
     gridPane.setAlignment( Pos.CENTER );
     gridPane.setHgap( 5 );
     gridPane.setVgap( 5 );
@@ -32,10 +34,13 @@ public class textBoxBackground extends Application
       } );
     }
 
-    Scene scene = new Scene( gridPane, 300, 200 ); // Create the scene and place it in the stage
+    // Create the scene and place it in the stage
+    Scene scene = new Scene( gridPane, 300, 200 ); 
     primaryStage.setTitle( "Textbox Border Example" );
-    primaryStage.setScene( scene );        // Place the scene in the stage.
-    primaryStage.show();                   // Display the stage.
+    // Place the scene in the stage.
+    primaryStage.setScene( scene );
+    // Display the stage.
+    primaryStage.show();
     scene.getStylesheets().add( getClass().getClassLoader().getResource( "textfield.css" ).toString() );
   }
 
@@ -44,11 +49,13 @@ public class textBoxBackground extends Application
     //System.out.println( tf.getText() );  // Used to facilitate debugging.
     if ( tf.getText().isEmpty() || tf.getText().matches( "(\\d*)" ) ) 
     {
-    	tf.getStyleClass().clear();        // Remove red border.
+      // Remove red border.
+    	tf.getStyleClass().clear();
     	tf.getStyleClass().addAll("text-field", "text-input");
     }
     else 
-        tf.getStyleClass().add( "error" ); // Add red border.
+        // Add red border.
+        tf.getStyleClass().add( "error" );
   }
 
   public static void main( String[] args ) { launch( args ); }
