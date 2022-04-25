@@ -17,9 +17,7 @@ The border is actually overlaid upon the background and inset from the outside e
 
 The properties for how a textfield is drawn can be found in the default stylesheet (modena.css), which is inside the JavaFX runtime JAR file, jfxrt.jar. This style sheet defines styles for the root node and the UI controls. To view this file, go to the \jre\lib\ext directory under the directory in which the Java Development Kit (JDK) is installed. Use the following command to extract the style sheet from the JAR file:
 
-'
-jar xf jfxrt.jar com/sun/javafx/scene/control/skin/modena/modena.css
-'
+'jar xf jfxrt.jar com/sun/javafx/scene/control/skin/modena/modena.css'
 
 Having covered all that background (pun intended), in order to properly draw a textbox (and make it look normal) you need to manipulate the textbox’s (region) properties. This is accomplished using the textfield’s .setStyle() method. The complete set of properties that define the textbox border and background are the following:
 
